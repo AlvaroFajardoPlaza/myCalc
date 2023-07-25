@@ -5,6 +5,30 @@ body {
     background: linear-gradient(45deg, rgb(1, 35, 39), rgb(30, 26, 26));
 }
 
+.css-selector {
+    background: linear-gradient(50deg, #040c20, #1c6885);
+    background-size: 400% 400%;
+
+    -webkit-animation: myCalc 20s ease infinite;
+    -moz-animation: myCalc 20s ease infinite;
+    animation: myCalc 20s ease infinite;
+}
+
+@-webkit-keyframes myCalc {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+@-moz-keyframes myCalc {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+@keyframes myCalc {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
 
 
 .calcContainer{
@@ -34,6 +58,16 @@ h1{
     text-align: center;   
 }
 
+.poweredContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 2rem;
+}
+
 .poweredBy {
     font-size: 1.2rem;
     text-decoration: none;
@@ -45,11 +79,16 @@ h1{
     font-weight: 300;
 }
 
+.nuclioLogo {
+    height: 28px;
+    margin-top: -0.5rem;
+}
+
 
 #screen{
     grid-column-start: 1;
     grid-column-end: 5;
-    background-color: rgb(15, 15, 15);
+    background-color: #040c20c0;
     text-align: right;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
